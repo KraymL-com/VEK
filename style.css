@@ -1,0 +1,777 @@
+ /* Импорт шрифтов*/
+@font-face {
+font-family: "BebasNeueRegular";  
+src: url("font/BebasNeue Regular.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal;
+ }
+
+
+@font-face {
+font-family: "BebasNeueBold";  
+src: url("font/BebasNeue Bold.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal;
+ }
+
+
+html {
+	background-color: #fff;
+}
+.main {
+	padding-top: 2%;
+    text-align: center; /* Выравнивание по центру */ 
+    font-size: 50px;
+    font-family: "BebasNeueRegular"; 
+    color:#2C3478 ;
+   }
+
+  body.index {
+    overflow: hidden;
+  	background-image: url(img/-electrical.png);
+  	margin: 0em;
+  	padding: 0em;
+  	background-size: cover;
+  }
+
+  #wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width: 1920px;
+}
+
+
+body { overflow-x: hidden; }
+
+h3 {
+    font-family: "BebasNeueBold"; 
+
+}
+
+ #white_bg {
+ 
+  z-index: 1;
+ }
+ /* убирет лишний отступ бутстрапа*/
+ .row {
+    --bs-gutter-x: 0 rem;
+}
+
+.vek_logo {
+  padding: 5px;
+  height: 250px;
+  width: 250px;
+}
+
+/* НАЧАТЬ */
+#container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50em 0 150em 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: fixed;
+}
+.bu {
+  position: fixed;
+  display: flex;
+  height: 80px;
+  width: 150px;
+  border: 3px solid #2C3478;
+  border-radius: 7px;
+  margin: 20px 20px 20px 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 50px;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family: BebasNeueBold;
+}
+a {
+  color: #2C3478;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+#button-3 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+#button-3 a {
+  position: relative;
+  transition: all .45s ease-Out;
+  z-index: 10;
+}
+#circle {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #2C3478;
+  position: absolute;
+  transition: all .5s ease-Out;
+  top: 20px;
+  left: 70px;
+}
+#button-3:hover #circle {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
+#button-3:hover a {
+  color: #ffffff;
+}
+
+/* СПРАВКА */
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0 150px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: fixed;
+}
+.b {
+  z-index: 10;
+  position: fixed;
+  display: inline-flex;
+  height: 80px;
+  width: 80px;
+  border: 3px solid #2C3478;
+  border-radius: 7px;
+  margin: 20px 20px 20px 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 50px;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family: BebasNeueBold;
+
+}
+
+a {
+  color: #2C3478;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+#button-3 {
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-3 a {
+  position: relative;
+  transition: all .45s ease-Out;
+  z-index: 10;
+}
+
+#circle {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #2C3478;
+  position: absolute;
+  transition: all .5s ease-Out;
+  top: 20px;
+  left: 70px;
+}
+
+#button-3:hover #circle {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
+
+ /* ИНСТРУКЦИЯ */
+
+ #container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0 150px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: fixed;
+}
+.butn {
+  z-index: 10;
+  display: inline-flex;
+  height: 80px;
+  width: 80px;
+  border: 3px solid #2C3478;
+  border-radius: 7px;
+  margin: 20px 20px 20px 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 50px;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  font-family: BebasNeueBold;
+  position: relative;
+}
+
+a {
+  color: #2C3478;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+#button-3 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-3 a {
+  position: relative;
+  transition: all .45s ease-Out;
+  z-index: 10;
+}
+
+#circle {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #2C3478;
+  position: absolute;
+  transition: all .5s ease-Out;
+  top: 20px;
+  left: 70px;
+}
+
+#button-3:hover #circle {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -45px;
+}
+
+#button-3:hover a {
+  color: #f4f5fa;
+}
+
+
+/*Кнопки МЕНЮ*/
+.link {
+  z-index: 10;
+  font-family: BebasNeueBold;
+  position: relative;
+  text-decoration: none;
+  color: #2C3478;
+  font-size: 50px;
+}
+.link:after {
+  z-index: 10;
+  position: absolute;
+  content: '';
+  bottom: 0;
+  display: block;
+  width: 0;
+  height: 4px;
+  background: #ffa600;
+  transition: .3s;
+  left: 0%
+}
+.link.center:after {
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.link:hover:after {
+  z-index: 10;
+  width: 100%;
+}
+
+/* ПЕРВЫЙ МОДУЛЬ */
+.m1{
+  display: block;
+  margin-top: 5%;
+  margin-left: 17%;
+  width: 400px;
+  height: 500px;
+  border-radius: 90px;
+background-color: #d6d9fc;
+padding: 10px;
+color: #2C3478;
+box-shadow: 0px 0px 22px -10px #000000;
+font-size: 40px;
+text-align: center;
+}
+
+.m1:before {
+  height: 0%;
+  width: 2px;
+}
+.m1:hover {
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0px rgba(0, 0, 0, .4);  
+    transition: 0.3s;
+}
+.m1:not(:hover){
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1700px) {
+  .m1 {
+    width: 20%;
+    height: 400px;
+    font-size: 180%;
+  }
+}
+
+
+a { 
+  text-align: center;
+
+}
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color:#2C3478;
+  text-align: center ;
+}
+
+.m2{
+  display: block;
+  margin-top: -26%;
+  margin-left: 64%;
+  width: 400px;
+  height: 500px;
+  border-radius: 90px;
+background-color: #d6d9fc;
+padding: 10px;
+color: #2C3478;
+box-shadow: 0px 0px 22px -10px #000000;
+font-size: 40px;
+text-align: center;
+}
+
+
+.m2:before {
+  height: 0%;
+  width: 2px;
+}
+.m2:hover {
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0px rgba(0, 0, 0, .4);  
+    transition: 0.3s;
+}
+.m2:not(:hover){
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1700px) {
+  .m2 {
+    width: 20%;
+    height: 400px;
+    margin-top: -30%;
+    font-size: 200%;
+  }
+}
+
+.pic {
+  width: 10%;
+}
+
+
+
+ /* настрйоки футера*/
+ #white_footer {
+ 	
+ 	margin-top: 0%;
+ 	padding-top: 0px;
+ 	padding-bottom: 0%;
+ 	padding-left: 0px;
+ 	position: relative;
+  	bottom: 0;
+  	width: 100%;
+ }
+
+ /* картинка из футера*/
+.bottom_city {
+  left: 0;  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+
+ /* Меню */
+.top_menu{
+	padding-top: 20px;
+	left: 0;  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+a.menu
+{
+	font-family: "BebasNeueRegular"; 
+	font-size: 45px;
+	text-decoration: none; /* Отменяем подчеркивание у ссылки */
+	color:#2C3478 ;
+  cursor: pointe;
+}
+
+
+.butt_menu {
+		text-align: center;
+	width: 450px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    margin: -125px 0 0 -125px;
+}
+
+
+
+
+
+.butt_main_menu {
+    text-align: left;
+  width: 30%;
+    height: 250px;
+    position: fixed;
+    top: 40%;
+    left: 15%;
+    margin: -5%;
+}
+
+.butt_menu_pr {
+    text-align: left;
+  width: 90%;
+    height: 250px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    margin: -125px 0 0 -125px;
+}
+
+body.bg_menu {
+  background-image: url(img/bgg.png);
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+}
+
+ /* Лекции меню*/
+.butt_menu_teory {
+    text-align: center;
+  width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 25%;
+
+
+}
+
+#butt_div_teory {
+	text-align: left;
+	width: 100%;
+    height: 100%;
+padding-top: 15%;
+padding-left: 2%;
+padding-right: 2%;
+}
+
+#butt_div_test {
+  text-align: center;
+  width: 0;
+    height: 100%;
+padding-top: 15%;
+padding-left: 3%;
+padding-right: 3%;
+}
+
+ /* Текст лекций */
+#white_bg_teory {
+	background-color: #fff;
+}
+
+.top_menu_list {
+	/* стили для стандарного положения */
+	background-color: #fff;
+	padding-top: 13px;
+	left: 0;  
+    width: 100%;
+    height: auto;
+
+	/* стили для Фиксированное положение */
+	position: fixed; 
+ 
+}
+
+#butt_div_teory_list {
+	text-align: center;
+	width: 100%;
+    height: 100%;
+    padding-top: 15%;
+}
+
+.teory_text {
+	width: 80%;
+	margin-left: 10%;
+	margin-top:0;
+}
+
+.arrow_fixed {
+	/* стили для стандарного положения */
+
+	bottom: 0;
+	left: 0;  
+    
+    height: auto;
+
+	/* стили для Фиксированное положение */
+	position: fixed; 
+
+}
+
+
+h1,p.video {
+    text-align: center;
+  }
+
+
+  /* общие стили для сетки из квадратов */
+.grid_menu {
+
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+    /* стиль для внутренних блоков */
+.grid_menu_box {
+  border: 4px solid black; /* Параметры обводки блока */
+  padding: 2%;
+  font-size:100px;
+  text-align: center;
+  vertical-align: middle;
+  height: 250px;
+  padding-top: 35px;
+}
+
+.grid_menu_pr {
+
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+    /* стиль для внутренних блоков */
+.grid_menu_box_pr {
+  border: 4px solid black; /* Параметры обводки блока */
+  padding: 1%;
+  font-size:30px;
+  text-align: center;
+  vertical-align: middle;
+  height: 50px;
+  
+}
+
+li {
+  text-align: left;
+}
+.btn3d {
+  display: block;
+    position: relative;
+    top: -6px;
+    border: 0;
+    transition: all 40ms linear;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 50%;
+    height: 160px;
+    width: 170px;
+    transform-style: preserve-3d;
+   transform: rotateX( 
+43deg) rotateY( 
+-7deg) rotateZ( 
+22deg);
+  color:#fff;
+  font-weight:700
+}
+
+.btn3d:active:focus,
+.btn3d:focus:hover,
+.btn3d:focus {
+  -moz-outline-style: none;
+  outline: medium none;
+}
+
+.btn3d:active,
+.btn3d.active {
+  top: 2px;
+}
+
+.btn3d.btn-success {
+      box-shadow: 0 0 0 1px #ffb6a6 inset, 0 0 0 2px rgb(255 255 255 / 15%) inset, 12px 23px 0px 0px #b92424, 0 8px 8px 1px rgb(0 0 0 / 50%);
+    background-color: #ef0000;
+}
+
+.btn3d.btn-success:active,
+.btn3d.btn-success.active {
+      box-shadow: 0 0 0 1px #ffb6a6 inset, 0 0 0 2px rgb(255 255 255 / 15%) inset, 4px 10px 0px 0px #b92424, 0 8px 8px 1px rgb(0 0 0 / 50%);
+    background-color: #ef0000;
+}
+
+
+/* Контейнер, который затемняет страницу */
+.css-modal-target {
+  display: none;
+}
+.css-modal-target:target {
+  z-index: 999;
+  display:flex;
+  align-items:center;
+  justify-content:center;    
+  z-index: 4;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: bg 0.5s ease;
+  background: rgba(214, 16, 16, 0.7);
+}
+/* Модальное окно */
+.css-modal-target .cmt {
+  z-index: 999;
+  font-family: BebasNeueBold;  
+  font-size: 40px;
+  
+  padding: 20px;
+  width: 80%;
+  z-index: 8;
+  max-width: 600px;
+  max-height: 70%;
+  transition: 0.5s;
+  border: 6px solid #2C3478;
+  border-radius: 12px;
+  background: #FFF;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  overflow: auto;
+  animation: scale 0.5s ease;
+}
+.css-modal-close {
+  
+  z-index: 999;
+  position: relative;
+  display: block;
+}
+
+.css-modal-close:before {
+  
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  content: "";
+  cursor: default;
+}
+
+/* Анимации */
+@keyframes scale {
+  0% {
+      transform: scale(0);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+@keyframes move {
+  0% {
+      right: -80px;
+  }
+  100% {
+      right: 20px;
+  }
+}
+@keyframes bg {
+  0% {
+      background: rgba(51, 122, 183, 0);
+  }
+  100% {
+      background: rgba(216, 7, 7, 0.7);
+  }
+}
+
+
+
+  
+.adaptive {
+  width: 1920px;
+}
+
+/* адаптация*/
+ #adapt {	
+ 	margin-top: 0%;
+ 	padding-top: 0px;
+ 	padding-bottom: 0%;
+ 	padding-left: 0px;
+ 	position: absolute;
+  	bottom: 50%;
+  	width: 100%;
+ }
+
+
+@media (max-width: 768px) {
+   .btn3d { 
+    margin-bottom: 10px; /* Добавляем отступ между кнопками */
+    width: 100%; /* Растягиваем кнопки на всю ширину */
+  }
+}
+
+
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+}
+
+.fix {
+  position: relative;
+  z-index: 10;
+}

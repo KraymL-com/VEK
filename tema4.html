@@ -1,0 +1,85 @@
+<html>
+	<head>
+        <title>Тема 1.1.</title>
+		<link rel="stylesheet" href="scr/index.min.css">
+		<link rel="stylesheet" href="style.css">
+        <link rel="Icon" type="png" 
+		href="img/vek.str.png">
+		<script src="scr/index.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+	</head>
+	<body class="teory">
+		<div class="row">
+			
+			<div id="white_bg" class="col-sm-12"> 
+				<a href="temmenu1.html"><img src="img/mod1.1.png" class="top_menu_list" alt="" width="1920" height="400"></a>
+
+			</div>
+
+    		<div class="col-sm-12" id="butt_div_teory">
+
+            <p align="center" style="font-size: 35px;"><b>Делитель напряжения </b><br/></p>
+         
+        
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПоследовательно подключённые резисторы делят поступающее на них напряжение в определённой пропорции. </p>
+            <img src="img_tem/t4.1.png" alt="" style="margin-top: 2%; margin-left: 5%;">
+            <br>
+            <br>
+            <br>
+            <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspРасчёт пропорции</b></p>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Сила тока, протекающая через резисторы одинакова, т.к. они соединены последовательно, и по закону Ома может быть рассчитана как:  </p>
+            <img src="img_tem/t4.2.png" alt="" style="margin-top: 2%; margin-left: 5%; width: 15%;">
+            <br>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp По тому же закону Ома можно вычислить напряжение <em>V<sub>out</sub></em>, которое падает на резисторе <em>R<sub>2</sub></em>: </p>
+            <img src="img_tem/t4.3.png" alt="" style="margin-top: 2%; margin-left: 5%; width: 30%;">
+            <br>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Из полученной формулы видно, что чем больше <em>R<sub>2</sub></em> относительно <em>R<sub>1</sub></em>, тем большее напряжение падает на нём.  </p>
+            <br>    
+            <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspСчитывание резистивных сенсоров</b></p>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Если вмето <em>R<sub>2</sub></em> использовать не постоянный резистор, а датчик, который меняет своё сопротивленивление, <em>V<sub>out</sub></em> будет зависеть от измеряемого значения. </p>
+            <img src="img_tem/t4.4.png" alt="" style="margin-top: 2%; margin-left: 5%;">
+            <br>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Микроконтроллер умеет измерять напряжение. Таким образом, мы можем использовать свойства делителя напряжения для получения показаний от сенсора. </p>
+            <br>
+            <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПримеры резистивных датчиков</b></p>
+            <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspТермистор</b></p>
+            <img src="img_tem/t4.5.png" alt="" style="margin-top: 2%; margin-left: 5%;">
+            <br>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspТермистор изменяет своё сопротивление в зависимости от собственной температуры </p>
+            <br>
+            <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspФоторезистор</b></p>
+            <img src="img_tem/t4.6.png" alt="" style="margin-top: 2%; margin-left: 5%;">
+            <br>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspФоторезистор (англ. Light Dependent Resistor или сокращённо LDR) изменяет своё сопротивление в зависимости от силы света, попадающего на его керамическую «змейку» </p>
+            <br>
+            <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПотенциометр</b></p>
+            <img src="img_tem/t4.7.png" alt="" style="margin-top: 2%; margin-left: 5%;">
+            <br>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПотенциометр ещё называют переменным резистором, триммером. Это делитель из двух резисторов в одном корпусе. Поэтому у него 3 ноги: питание, выход, земля.  </p>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspСоотношение <em>R<sub>1</sub></em> и <em>R<sub>2</sub></em> меняется поворотом ручки. От 100% в пользу <em>R<sub>1</sub></em> до 100% в пользу <em>R<sub>2</sub></em>. </p>
+            
+            <div>
+				<a href="temmenu1.html" class="link" style="margin-left: 48.3%; bottom: -50%;">Назад</a>
+			</div>
+    		
+        
+        
+        </div>
+        </div>	
+    </body>
+
+	<footer>
+		<div class="row" id="white_footer">
+			<div class="col-sm-12"> 
+						
+			</div>
+		</div>
+	</footer>
+
+</html>
