@@ -738,20 +738,7 @@ li {
 
 
   
-.adaptive {
-  width: 1920px;
-}
 
-/* адаптация*/
- #adapt {	
- 	margin-top: 0%;
- 	padding-top: 0px;
- 	padding-bottom: 0%;
- 	padding-left: 0px;
- 	position: absolute;
-  	bottom: 50%;
-  	width: 100%;
- }
 
 
 @media (max-width: 768px) {
