@@ -1,6 +1,6 @@
 <html>
 	<head>
-        <title>Тема 1.1.</title>
+        <title>Тема 1.5.</title>
 		<link rel="stylesheet" href="scr/index.min.css">
 		<link rel="stylesheet" href="style.css">
         <link rel="Icon" type="png" 
@@ -175,11 +175,149 @@
                 <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp Простое правило</b></p>
                 <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Чтобы не заниматься расчётами резистора каждый раз во время проведения экспериментов, можно просто запомнить правило для самого типичного сценария.    </p>
                 <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Для питания 1 светодиода на 20 мА от 5 В используйте резистор от 150 до 360 Ом.    </p>
-                
+<!-- КНОПКА -->      
+                <br>
+                <br>
+                <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp <u>Кнопка</u></b></p> 
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Тактовая кнопка — простой, всем известный механизм, замыкающий цепь пока есть давление на толкатель.  </p>
+                <img src="img_tem/t5.20.png" alt="" style="margin-top: 2%; margin-left: 5%;">
+                 <br>
+                <br>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Кнопки с 4 контактами стоит рассматривать, как 2 пары рельс, которые соединяются при нажатии.    </p>
+                <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp Эффект дребезга</b></p>
+                <img src="img_tem/t5.21.png" alt="" style="margin-top: 2%; margin-left: 5%;">
+                <br>
+                <br>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp При замыкании и размыкании между пластинами кнопки возникают микроискры, провоцирующие до десятка переключений за несколько миллисекунд. Явление называется дребезгом (англ. bounce). Это нужно учитывать, если необходимо фиксировать «клики».     </p>
+                <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp Схема подключения</b></p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Напрашивается подключение напрямую. Но это наивный, неверный способ. </p>
+                <img src="img_tem/t5.22.png" alt="" style="margin-top: 2%; margin-left: 5%;">
+                <br>
+                <br>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Пока кнопка нажата, выходное напряжение Vout = Vcc, но пока она отпущена, Vout ≠ 0. Кнопка и провода в этом случае работают как антенна, и Vout будет «шуметь», принимая случайные значения «из воздуха».      </p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Пока соединения нет, необходимо дать резервный, слабый путь, делающий напряжение определённым. Для этого используют один из двух вариантов.     </p>
+                <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp Схема со стягивающим резистором</b></p>
+                <img src="img_tem/t5.23.png" alt="" style="margin-top: 2%; margin-left: 5%;">
+                <br>
+                <br>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Есть нажатие: Vout = Vcc </p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Нет нажатия: Vout = 0 </p>
+                <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp Схема с подтягивающим резистором</b></p>
+                <img src="img_tem/t5.24.png" alt="" style="margin-top: 2%; margin-left: 5%;">
+                <br>
+                <br>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Есть нажатие: Vout = 0 </p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Нет нажатия: Vout = Vcc </p>
 
 
-
-
+<!-- Биполярный транзистор -->
+                <br>
+                <br>
+                <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp <u>Биполярный транзистор</u></b></p> 
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Транзистор — это электронная кнопка. На кнопку нажимают пальцем, а на биполярный транзистор — током.  </p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Транзисторы используют для управления мощными нагрузками при помощи слабых сигналов с микроконтроллера.  </p>
+                <img src="img_tem/t5.25.png" alt="" style="margin-top: 2%; margin-left: 5%;">
+                <br>
+                <br>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Нога, выполняющая роль «кнопки» называется база (англ. base) </p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Пока через базу течёт небольшой ток, транзистор открыт: </p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp большой ток может втекать в коллектор (англ. collector) </p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp и вытекать из эмиттера (англ. emitter) </p>
+                <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbspОсновные характеристики</b></p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Макс. напряжение коллектор-эмиттер - Вольт(V<sub>СЕ</sub>) </p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Максимальный ток через коллектор - Ампер(I<sub>С</sub>) </p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Коэффициент усиления (h<sub>fe</sub>)</p>
+                <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbspТиповая схема подключения</b></p>
+                <img src="img_tem/t5.26.png" alt="" style="margin-top: 2%; margin-left: 5%;">
+                <br>
+                <br>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Транзистор усиливает максимально допустимый ток в h<sub>fe</sub> раз: </p>
+                <img src="img_tem/t5.27.png" alt="" style="margin-top: 0; margin-left: 5%; width: 15%;">
+                <br>
+                <br>
+                <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbspПример расчёта</b></p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Если управляющий сигнал на базе транзистора с h<sub>fe</sub> и резистором номиналом 1 кОм составляет 5 вольт: </p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Какой максимальный ток сможет пропустить через себя транзистор?</p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Каким по величине будет управляющий ток?</p>
+                <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp Дано</b></p>
+                <img src="img_tem/t5.28.png" alt="" style="margin-top:0; margin-left: 5%; width: 10%;">
+                 <br>
+                <br>
+                <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp Найти</b></p>
+                <img src="img_tem/t5.29.png" alt="" style="margin-top:0; margin-left: 5%; width: 7%;">
+                 <br>
+                <br>         
+                <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp Решение</b></p>
+                <img src="img_tem/t5.30.png" alt="" style="margin-top:0; margin-left: 5%; width: 25%;">
+                 <br>
+                <br>  
+                <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp Вывод</b></p>  
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Если на базу подаётся 5 В через резистор в 1 кОм, транзистор откроется настолько, что будет способен пропустить до 250 мА. При этом управляющий ток составит всего 5 мА </p>
+ 
+ 
+<!-- Полевой транзистор -->
+                <br>
+                <br>
+                <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp <u>Полевой транзистор</u></b></p> 
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Полевой MOSFET-транзистор — ключ для управления большими токами при помощи небольшого напряжения.   </p>
+                <img src="img_tem/t5.31.png" alt="" style="margin-top:2%; margin-left: 5%;">
+                 <br>
+                <br> 
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp «Кнопка» называется затвором (англ. gate) </p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Пока на затворе есть небольшое напряжение, транзистор открыт: </p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp большой ток может втекать в сток (англ. drain) </p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp и вытекать из истока (англ. source) </p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp В отличие от биполярного транзистора полевой контролируется именно напряжением, а не током. Т.е. в открытом состоянии ток через затвор не идёт.  </p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Используйте MOSFET для управления большими токами, от сотен миллиампер, когда дешёвого биполярного транзистора уже не достаточно.  </p>
+                <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp  Основные характеристики</b></p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Максимальное напряжение сток-исток - Вольт(V<sub>DS</sub>) </p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Максимальный ток через сток  - Ампер(I<sub>D</sub>) </p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Сопротивление сток-исток - Ом (R<sub>DSon</sub>)</p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Рассеиваемая мощность - Ватт (P<sub>D</sub>)</p>
+                  <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp  Типовая схема подключения</b></p>
+                  <img src="img_tem/t5.32.png" alt="" style="margin-top:2%; margin-left: 5%;">
+                 <br>
+                <br> 
+                 <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp  Рассеивание тепла</b></p>
+                 <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Транзистор не идеален и часть пропускаемой мощности превращается в тепло. </p>
+                  <img src="img_tem/t5.33.png" alt="" style="margin-top:0%; margin-left: 5%; width: 15%;">
+                 <br>
+                <br> 
+                  <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Если P<sub>H</sub> превысит P<sub>D</sub>, без помощи дополнительного охлаждения транзистор сгорит.</p>
+ 
+ 
+ 
+<!-- Пьезодинамик -->
+                <br>
+                <br>
+                <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp <u>Пьезодинамик</u></b></p> 
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Пьезоизлучатель звука (англ. buzzer) переводит переменное напряжение в колебание мембраны, которая в свою очередь создаёт звуковую волну.    </p>
+                <img src="img_tem/t5.34.png" alt="" style="margin-top:2%; margin-left: 5%;">
+                 <br>
+                <br> 
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Иначе говоря, пьезодинамик — это конденсатор, который звучит при зарядке и разрядке.  </p>
+                <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp  Основные характеристики</b></p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Рекомендуемое (номинальное) напряжение - Вольт (V) </p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Громкость (на заданном расстоянии)   - Децибел (P) </p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Пиковая частота - Герц (f<sub>p</sub>)</p>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Ёмкость - Фарад (C)</p>
+                <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp  Амплитудно-частотная характеристика</b></p>
+                 <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspАмплитудно-частотная характеристика (АЧХ) определяет громкость звука в зависимости от частоты управляющего сигнала, который и определяет высоту звучащей ноты.  </p>
+                <img src="img_tem/t5.35.png" alt="" style="margin-top:2%; margin-left: 5%;">
+                 <br>
+                <br>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspИдеальная АЧХ — это прямая, т.е. одинаковая громкость вне зависимости от частоты. Но мир не идеален и разные виды излучателей имеют разные отклонения от идеала.   </p>
+                 <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp  Подключение напрямую</b></p>
+                 <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПьезодинамик потребляет всего пару мА, поэтому можно смело подключать его прямо к микроконтроллеру  </p>
+                <img src="img_tem/t5.36.png" alt="" style="margin-top:2%; margin-left: 5%;">
+                 <br>
+                <br>
+                <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Для звучания нужно подавать на динамик квадратную волну. Какой частоты будет волна, такой частоты будет и звук   </p>
+                <img src="img_tem/t5.37.png" alt="" style="margin-top:2%; margin-left: 5%;">
+                 <br>
+                <br>
+                <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp  Подключение с регулировкой громкости</b></p>
+                <img src="img_tem/t5.38.png" alt="" style="margin-top:2%; margin-left: 5%;">
 
 
             <div>
