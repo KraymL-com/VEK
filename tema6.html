@@ -17,36 +17,87 @@
 
     		<div class="col-sm-12" id="butt_div_teory">
 
-            <p align="center" style="font-size: 35px;"><b>Что такое Arduino: первые шаги в электронике </b><br/></p>
+            <p align="center" style="font-size: 35px;"><b>Что такое САПР P-CAD </b><br/></p>
             <br>
-            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspЧто можно сделать на Ардуино и зачем это нужно? Разбираемся с популярной и дружелюбной платформой, которая позволяет быстро создавать умные электронные устройства своими руками. </p>
+            <p style="font-size: 20px;"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp P-CAD — система автоматизированного проектирования электроники (EDA) предназначенная для проектирования многослойных печатных плат вычислительных и радиоэлектронных устройств.</p>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp В состав P-CAD входят два основных модуля — P-CAD Schematic (графический редактор принципиальных электрических схем) и P-CAD PCB (графический редактор печатных плат), а также ряд других вспомогательных программ.  </p>
             <br>
-            <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspСамодостаточная начинка</b></p>  
-            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Arduino — это небольшая управляющая плата с собственным процессором и памятью. Помимо них на плате есть пара десятков контактов, к которым можно подключать всевозможные компоненты: светодиоды, датчики, моторы, чайники, роутеры, магнитные дверные замки и вообще всё, что работает от электричества.   </p>
-            <img src="img_tem/t6.1.jpg" alt="" style="margin-top: 2%; margin-left: 5%; width: 25%;">
+            <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspНекоторые возможности программы:</b></p>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  ─ интерактивное размещение элементов и автотрассировка проводников;</p>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  ─ поиск ошибок на любой стадии проекта;</p> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  ─ подготовка документации;</p> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  ─ проверка целостности всех сигналов;</p> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  ─ анализ перекрёстных искажений.</p>  
+            <br>
+            <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspИнтерфейс программы выглядит следующим образом:</b></p> 
+            <br>
+             <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Symbol Editor</b></p> 
+            <img src="img_tem/Симбол1.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px;"> 
             <br>
             <br>
-            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp В процессор Ардуино можно загрузить программу, которая будет управлять всеми этими устройствами по заданному алгоритму. Таким образом можно создать бесконечное количество уникальных классных гаджетов, сделанных своими руками и по собственной задумке.    </p>
-            <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПростота и доступность</b></p>  
-            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Платформа Arduino приобрела бешеную популярность благодаря простоте и дружелюбности. Даже полный ноль в программировании и схемотехнике может освоить основы работы с Ардуино за пару часов. Этому способствуют тысячи публикаций, учебников, заметок в интернете и отличная серия видеоуроков по Arduino на русском языке.    </p>
-            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Программы для Ардуино пишутся на обычном C++, дополненным простыми и понятными функциями для управления вводом-выводом на контактах. Если вы уже знаете C++, Arduino станет дверью в новый мир, где программы не ограничены рамками компьютера, а взаимодействуют с окружающим миром и влияют на него. Если же вы новичок в программировании — не проблема, вы с лёгкостью научитесь, это просто.     </p>
-            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Для удобной работы с платами Ардуино существует бесплатная официальная среда программирования Arduino IDE, работающая под Windows, Mac OS и Linux. С помощью неё загрузка новой программы в контроллер становится делом одного клика, только лишь подключите плату к компьютеру через USB. Хотя для более пытливых умов возможна работа и через Visual Studio, Eclipse, другие IDE или командную строку, а новичкам подойдёт визуальная среда программирования XOD IDE.     </p>
-            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Вам не понадобится паяльник. Полноценные устройства можно собирать, используя специальную макетную доску, перемычки и провода абсолютно без пайки. Прототипирование ещё не было таким быстрым и простым, поэтому ардуинки быстро прижились в школах и кружках робототехники.     </p>
-            <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПринцип бутерброда</b></p>  
-            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Ещё одной отличительной особенностью Arduino является наличие плат расширения под названием Shield. Эти «шилды» ставятся поверх ардуинки подобно слоям бутерброда и дают ей новые дополнительные возможности. Например, существуют платы расширения для подключения к локальной сети и интернету (Ethernet Shield), для управления мощными моторами (Motor Shield), для получения координат и времени со спутников GPS (приёмник GPS/ГЛОНАСС) и многие другие.      </p>
-            <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspВ итоге</b></p>     
-            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Arduino — это сердце конструктора, в котором нет конечного, строго определённого набора деталей, и нет ограничений в разнообразии того, что вы можете из него собрать. Всё ограничено лишь вашей фантазией. Это новый мир, убойное хобби и отличный подарок. Свыше 10 миллионов людей в мире уже поняли это.      </p>
-            <div>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Первая программа, в которой предстоит начать работу - Symbol Editor.</p> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Symbol Editor - эта программа предназначена для создания УГО(условно графическое обозначение) радиоэлементов. Также в этой программе создаются и сохраняются библиотеки с вашими радиоэлементами для дальнейшего более быстрого их использования.</p> 
+            <br>
+             <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Pattern Editor</b></p> 
+            <img src="img_tem/Патерн1.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px;"> 
+            <br>
+            <br>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Следующая программа - Pattern Editor.</p> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Pattern Editor - программа предназначенная для создания или копирования посадочного места элемента из уже созданной или предзагруженной библиотеки.</p>
+            <br>
+             <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Library Executive</b></p> 
+            <img src="img_tem/Ексекутив1.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px;"> 
+            <br>
+            <br>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Далее идёт - Library Executive.</p> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Library Executive - данная программа предназначенная для выставления электрических типов "ножек" элемента.</p>
+            <img src="img_tem/Ексекутив3.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px;"> 
+            <br>
+            <br>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp А также можно увидеть выбранное ранее посадочное место и изменить то, какой будет префикс у элемента, и какая будет нумерация элемент на схеме - буквами или цифрами. </p> 
+            <img src="img_tem/Ексекутив2.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px;"> 
+            <br>
+            <br>
+            <br>
+            <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Schematic</b></p>
+            <img src="img_tem/схематик1.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px;">
+            <br>
+            <br>
+            <br> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Следующая программа - Schematic.</p>  
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Schematic - эта программа необходима для того, чтобы собрать всю схему целиком из созданных ранее библиотек.</p>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp После добавления всех нужных библиотек и сбора цельной схемы её можно проверить на ошибки, а также создать список соединений, который впоследствии понадобится для компановки и трассировки печатной платы.</p> 
+            <br>
+            <p style="font-size: 20px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp PCB</b></p>
+            <img src="img_tem/ПСБ1.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px;">
+            <br>
+            <br>
+            <br> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Следующая программа - PCB.</p>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp PCB - эта программа служит для компановки и трассировки печтаной плат, в неё можно загрузить созданный ранее список соединений, предварительно загрузив все необходимые библиотеки.</p>
+            <img src="img_tem/ПСБ2.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px;">
+            <br>
+            <br>
+            <br> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Для правильной трассировки печатной платы необходимо выполнить правильную компановку, которая строится из следующих правил:</p> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  ─ минимальная средняя длина проводника;</p>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  ─ минимальное количество пересечений проводников;</p> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  ─ равномерное размещение элементов;</p> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  ─ оптимальное размещение внешних выводов с края печатной платы;</p> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  ─ проводники не должны накладываться друг на друга;</p>  
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  ─ компоненты не должны накладываться друг на друга;</p> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  ─ оптимальный размер печатной платы.</p> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp После правильной компановки можно трассировать печатную плату, а псоле выводить на печать</p>
+
+
+              <div>
 				<a href="temmenu1.html" class="link" style="margin-left: 48.3%; bottom: -50%;">Назад</a>
 			</div>
-    		
-        
-        
-        </div>
-        </div>	
-    </body>
-
-	<footer>
+            <footer>
 		<div class="row" id="white_footer">
 			<div class="col-sm-12"> 
 						

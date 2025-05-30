@@ -1,0 +1,89 @@
+<html>
+	<head>
+        <title>Тема 2.4.</title>
+		<link rel="stylesheet" href="scr/index.min.css">
+		<link rel="stylesheet" href="style.css">
+        <link rel="Icon" type="png" 
+		href="img/vek.str.png">
+		<script src="scr/index.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+	</head>
+	<body class="teory">
+		<div class="row">
+			
+			<div id="white_bg" class="col-sm-12"> 
+				<a href="temmenu2.html"><img src="img/mod1.2.png" class="top_menu_list" alt="" width="1920" height="400"></a>
+
+			</div>
+
+    		<div class="col-sm-12" id="butt_div_teory">
+
+            <p align="center" style="font-size: 35px;"><b> Библиотеки </b><br/></p>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Очень часто одни и те же части кода кочуют из программы в программу. Например, код для работы с датчиком. Чтобы не писать этот код каждый раз заново, его выносят в отдельные файлы — библиотеки. Огромное количество готового кода уже написано другими людьми, и с помощью библиотек его можно легко использовать в своих программах. </p>
+            <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПодключение библиотек</b></p> 
+             <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspОчень много готовых библиотек уже содержатся в среде Arduino IDE. Добавить библиотеку в свой код можно из меню: Эскиз - Импорт библиотек… - Название библиотеки: </p> 
+            <img src="img_tem/L1.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px">
+            <br>
+            <br>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПосле выбора пункта «Servo» IDE сама вставит в код нужные строчки:  </p>
+            <img src="img_tem/L2.png" alt="" style="margin-top: 2%; margin-left: 5%; width: 30%; ">
+            <br>
+            <br>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspКонечно, если вы знаете название нужной библиотеки, можно просто написать в самом верху скетча #include < Servo.h > — результат будет тем же самым.  </p>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspЧтобы посмотреть пример работы с библиотекой из состава Arduino IDE, необходимо выбрать в меню: Файл - Образцы - Название библиотеки - Название примера  </p>
+            <img src="img_tem/L3.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px">
+            <br>
+            <br>
+            <br>
+            <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspСторонние библиотеки</b></p>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspБиблиотек для Arduino действительно очень много. И только незначительная часть из них входит в среду программирования Arduino IDE. Чтобы добавить библиотеку в Arduino IDE её нужно скачать, все библиотеки скачиваются в формате .zip-архив. После загрузки необходимой библиотеки переходим в Arduino IDE и выполняем импорт библиотек в вашу рабочую папку Sketchbook/libraries, в которой должны находится все сторонние библиотеки. Сделать это можно прямо из среды программирования в меню: Эскиз - Импорт библиотек… - Добавить библиотеку… :   </p>
+            <img src="img_tem/L4.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px">   
+            <br>
+            <br>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspОткроется диалоговое окно, в котором необходимо выбрать архив [Ваш архив].zip и нажать кнопку Open. Готово. Теперь библиотеки можно добавлять в код. Примеры работы с библиотекой доступны в меню: Файл - Sketchbook - libraries - Название библиотеки - Название примера    </p>
+            <img src="img_tem/L5.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px">
+            <br>
+            <br>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspВ Arduino 1.6.7 и выше: Файл - Примеры - Название библиотеки - Название примера.     </p>  
+            <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspСоздание библиотеки</b></p>   
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspОбычно при создании библиотеки создаются два файла: заголовочный файл и файл с кодом библиотеки. Давайте попробуем написать библиотеку, которая позволяла бы нам посчитать площадь круга. Создадим в директории %Sketchbook%\Arduino\libraries папку с названием нашей библиотеки (название может состоять только из латинских букв и цифр, но при этом не может начинаться с цифры). Назовём нашу библиотеку circleArea. Перейдём в созданную нами папку %Sketchbook%\Arduino\libraries\circleArea и создадим там два файла:      </p> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ─ circleArea.h — заголовочный файл     </p>  
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ─ circleArea.cpp — файл с кодом библиотеки.     </p>  
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspКод circleArea.h будет таким:     </p>
+             <img src="img_tem/L6.png" alt="" style="margin-top: 0%; margin-left: 2%; width: 30%;">
+             <br>
+             <br>
+             <br>
+             <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspКод circleArea.cpp будет таким:    </p>
+             <img src="img_tem/L7.png" alt="" style="margin-top: 0%; margin-left: 2%; width: 30%;">
+             <br>
+             <br>
+             <br>
+             <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspИспользование библиотеки в скетче будет таким:     </p>
+             <img src="img_tem/L8.png" alt="" style="margin-top: 0%; margin-left: 2%; width: 30%;">
+
+
+
+            <div>
+				<a href="temmenu2.html" class="link" style="margin-left: 48.3%; bottom: -50%;">Назад</a>
+			</div>
+    		
+        
+        
+        </div>
+        </div>	
+    </body>
+
+	<footer>
+		<div class="row" id="white_footer">
+			<div class="col-sm-12"> 
+						
+			</div>
+		</div>
+	</footer>
+
+</html>

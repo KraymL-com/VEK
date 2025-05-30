@@ -1,0 +1,110 @@
+<html>
+	<head>
+        <title>Тема 2.2.</title>
+		<link rel="stylesheet" href="scr/index.min.css">
+		<link rel="stylesheet" href="style.css">
+        <link rel="Icon" type="png" 
+		href="img/vek.str.png">
+		<script src="scr/index.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+	</head>
+	<body class="teory">
+		<div class="row">
+			
+			<div id="white_bg" class="col-sm-12"> 
+				<a href="temmenu2.html"><img src="img/mod1.2.png" class="top_menu_list" alt="" width="1920" height="400"></a>
+
+			</div>
+
+    		<div class="col-sm-12" id="butt_div_teory">
+
+            <p align="center" style="font-size: 35px;"><b> Arduino IDE: установка и настройка </b><br/></p>
+            <br>
+            <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1. Установка Arduino IDE под Windows</b></p>  
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Установите на компьютер интегрированную среду разработки Arduino IDE. </p>
+            <a href="program/arduino-ide_2.3.4_Windows_64bit.exe" download="" class="link" style="margin-left: 15%; font-size: 30px; z-index: 0;">скачать</a>
+            <br>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp После загрузки программы - запустите и установите её в удобную для вас папку. </p>
+            <img src="img_tem/ard.ust.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px">
+            <br>
+            <br>
+            <br>
+            <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2. Запуск Arduino IDE</b></p> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Запустите среду программирования. </p>
+            <img src="img_tem/arduinoPR1.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px">
+            <br>
+            <br>
+            <br>
+            <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3. Подключение платы Arduino к компьютеру</b></p> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1. Соедините Arduino с компьютером по USB-кабелю. На плате загорится светодиод «ON» и начнёт мигать светодиод «L». Это значит, что на плату подано питание и микроконтроллер начал выполнять прошитую на заводе программу «Blink». </p>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2. Для настройки Arduino IDE под конкретную модель узнайте, какой номер COM-порта присвоил компьютер вашей плате. Зайдите в «Диспетчер устройств» Windows и раскройте вкладку «Порты (COM и LPT)».</p>
+            <img src="img_tem/arduinoPR2.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px">
+            <br>
+            <br>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Операционная система распознала плату Arduino как COM-порт и назначила номер 2. Если вы подключите к компьютеру другую плату, операционная система назначит ей другой номер. Если у вас несколько платформ, очень важно не запутаться в номерах COM-портов. </p>
+            <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4. Настройка Arduino IDE</b></p> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Для работы среды Arduino IDE с конкретной платформой необходимо выбрать название модели и номер присвоенного плате COM-порта.  </p>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1. Для выбора модели Arduino зайдите в меню: Инструменты - Плата и укажите соответствующую плату.  </p> 
+            <img src="img_tem/arduinoPR3.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px">
+            <br>
+            <br>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2. Для выбора номера COM-порта перейдите в меню: Инструменты - Порт и укажите нужный порт.  </p> 
+            <img src="img_tem/arduinoPR4.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px">
+            <br>
+            <br>
+            <br>
+            <p style="font-size: 25px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp5. Загрузка первого скетча</b></p> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspСреда настроена, плата подключена. Пора прошивать платформу.   </p> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspArduino IDE содержит большой список готовых примеров, в которых можно быстро подсмотреть решение какой-либо задачи.    </p>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1. Откройте распространенный пример — «Blink»: Файл - Примеры - 01.Basics - Blink.   </p>
+            <img src="img_tem/arduinoPR5.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px">
+            <br>
+            <br>
+            <br>    
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2. Откроется окно с демонстрационным примером.   </p>
+            <img src="img_tem/arduinoPR6.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px">
+            <br>
+            <br>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3. Немного модифицируйте код, чтобы увидеть разницу с заводским миганием светодиода. Замените строчки:   </p> 
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ─ delay(1000);   </p>  
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp на:   </p>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ─ delay(100);   </p>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4. Нажмите на иконку «Компиляция» для проверки кода на ошибки   </p>
+            <img src="img_tem/arduinoPR7.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px">    
+            <br>
+            <br>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp5. Нажмите на иконку «Загрузка» для заливки на плату.   </p>
+            <img src="img_tem/arduinoPR8.png" alt="" style="margin-top: 2%; margin-left: 5%; box-shadow: 0px 0px 22px -5px">
+            <br>
+            <br>
+            <br>
+            <p style="font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp6. После прошивки платформы светодиод «L» начнёт загораться и гаснуть каждые 100 миллисекунд — в 10 раз быстрее исходной версии. Это значит, что ваш тестовый код успешно загрузился и заработал.    </p>
+
+
+
+
+
+
+            <div>
+				<a href="temmenu2.html" class="link" style="margin-left: 48.3%; bottom: -50%;">Назад</a>
+			</div>
+    		
+        
+        
+        </div>
+        </div>	
+    </body>
+
+	<footer>
+		<div class="row" id="white_footer">
+			<div class="col-sm-12"> 
+						
+			</div>
+		</div>
+	</footer>
+
+</html>
